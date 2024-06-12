@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재난발생?! 위기탈출!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img
+                src="https://postfiles.pstatic.net/MjAyNDA2MTJfMjI5/MDAxNzE4MTc4NzA0MjAw.wpx22KfNdc8B5cfkMVwZzhnhY2cK3562CRTTEoF4LZMg.2DAWWyW-j7HwYYGV7ytIigO-7y-PmeJbAgrHIeuNUlUg.PNG/image1.png?type=w773">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">지역 재난안전</a></li>
+                <li><a href="#">행동수칙</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>재난발생?! 위기탈출!!</h1>
+            <p>위기를 함께 해쳐 나아갈 유용한 정보를 제공하기 위해 노력합니다.<br>↓아래버튼을 눌러주시면 [재난안전대책본부]로 이동합니다↓</p>
+            <button>재난안전대책본부</button>
+            <output url="https://www.safekorea.go.kr/idsiSFK/neo/main/main.html" </section>
+
+                <section class="community">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>커뮤니티 창</title>
+                        <style>
+                            #chat-box {
+                                height: 300px;
+                                overflow-y: scroll;
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                            }
+
+                            .message {
+                                margin-bottom: 5px;
+                            }
+
+                            .delete-btn {
+                                cursor: pointer;
+                                color: red;
+                                font-weight: bold;
+                                margin-left: 10px;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <div id="chat-box"></div>
+                        <input type="text" id="message" placeholder="메시지를 입력하세요">
+                        <button onclick="sendMessage()">전송</button>
+
+                        <script>
+                            function sendMessage() {
+                                var messageInput = document.getElementById("message");
+                                var message = messageInput.value;
+                                var chatBox = document.getElementById("chat-box");
+
+                                if (message.trim() !== "") {
+                                    var messageElement = document.createElement("div");
+                                    var messageText = document.createElement("span");
+                                    messageText.textContent = message;
+                                    var deleteButton = document.createElement("span");
+                                    deleteButton.textContent = "삭제";
+                                    deleteButton.classList.add("delete-btn");
+                                    deleteButton.addEventListener("click", function () {
+                                        messageElement.remove();
+                                    });
+                                    messageElement.appendChild(messageText);
+                                    messageElement.appendChild(deleteButton);
+                                    messageElement.classList.add("message");
+                                    chatBox.appendChild(messageElement);
+                                    chatBox.scrollTop = chatBox.scrollHeight;
+                                    messageInput.value = "";
+                                }
+                            }
+                        </script>
+                    </body>
+
+                    <section class="news">
+                        <h2>[긴급뉴스]최근 재난현황</h2>
+                    </section>
+
+                    <section class="activities">
+                        <h2>재난 안전 활동</h2>
+                        <div class="card-container">
+                            <div class="card" onClick="location.href='http://nsec.or.kr/contents/site/selectPageView.do?menuId=335'">
+                                <img src="http://nsec.or.kr/uploads/other/2024A02Z20161149826.jpg"
+                                    alt="[교육]찾아가는 안전 체험 교육" class="card-img-top" width="100" height="100">
+                                <div class="card-body">
+                                    <h5 class="card-title">[교육]찾아가는 안전 체험 교육</h5>
+                                    <p class="card-text">[주관처]<br>국민안전체험센터</p>
+                                </div>
+                            </div>
+
+                            <div class="card" onClick="location.href='https://www.xn--o39ayys9isxf73cw3ej5ueucv4df91c6a.com/summary/summary.php'">
+                                <img src="https://www.우리가바라는안전한학교.com/assets/img/logo_header_1.png"
+                                    alt="[공모전]우리가바라는안전한학교" class="card-img-top" width="100" height="100">
+                                <div class="card-body">
+                                    <h5 class="card-title">[공모전]우리가바라는안전한학교</h5>
+                                    <p class="card-text">[주관처]<br>우리가바라는안전한학교</p>
+                                </div>
+                            </div>
+
+                            <div class="card" onClick="location.href='https://blog.naver.com/mopaspr/223470030047'">
+                                <img src="https://postfiles.pstatic.net/MjAyNDA2MDVfMjgx/MDAxNzE3NTcwNjk2MzA0.G-q5Hu1U_5fKwI-5blLg2LyrGPese6q1bdQkI8Hxgbog.Jk6Mt88tjjLxm0EgwGhD_spxMejgzOaNfyfTOFUuugEg.PNG/image.png?type=w966"
+                                    alt="[신고]찾아가는 안전 체험 교육" class="card-img-top" width="100" height="100">
+                                <div class="card-body">
+                                    <h5 class="card-title">[신고]찾아가는 안전 체험 교육</h5>
+                                    <p class="card-text">[주관처]<br>행정안전부</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+                    <!-- Bootstrap CSS 추가 -->
+                    <!--p class="stript">재난 안전 활동</!--p>
+            <div class="card-group">
+                <div class="card1">
+                    <div class="card-body">
+                        <h5 class="card-title">[교육]찾아가는 안전 체험 교육</h5>
+                        <img src="http://nsec.or.kr/uploads/other/2024A02Z20161149826.jpg" alt="[교육]찾아가는 안전 체험 교육">
+                        alt="..." width="100" height="100" border="20" >
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">[공모전]안전한세상 만들기</h5>
+                        <p class="card-text">내용</p>
+                        <p class="card-text"><small class="text-body-secondary">하단내용</small></p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">[체험]안전훈련</h5>
+                        <p class="card-text">내용</p>
+                        <p class="card-text"><small class="text-body-secondary">하단내용</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-3 mx-auto w-75 pb-5">
+
+        </section>-->
+    </main>
+</body>
+
+
+</html>
