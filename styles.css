@@ -162,4 +162,14 @@ main {
 }
 .footer image {
     margin-left: 300px;
+
+}
+.footer image2 {
+    margin-left: 250px;
+
+}
+.footer {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
 }
