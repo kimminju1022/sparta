@@ -113,6 +113,7 @@ main {
     width: 50%; /* 현재 너비의 70%로 설정 */
     height: 40px;
     vertical-align: middle;
+    background-color: white;
 }
 
 .footerul ul{
