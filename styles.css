@@ -134,7 +134,11 @@ main {
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px; 
+    background-color: white;
 }
 .card-img-top {
     border-radius: 8%;
+}
+.footer image {
+    margin-left: 300px;
 }
