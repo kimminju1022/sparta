@@ -70,33 +70,6 @@ main {
     cursor: pointer;
 }
 
-.search {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.search label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-.search input {
-    padding: 10px;
-    width: 30%;
-    margin-bottom: 20px;
-}
-
-.search button {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.search ul {
-    list-style: none;
-    padding: 0;
-}
-
 .news {
     margin-bottom: 40px;
 }
@@ -111,6 +84,37 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+.chat-container {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    height: 400px; /* 채팅박스 높이 */
+    overflow-y: scroll;
+}
+
+.message-box {
+    width: 55.55%;
+    display: inline-block;
+}
+
+.send-button {
+    width: auto; /* 너비를 자동으로 조절하도록 수정 */
+    display: inline-block;
+}
+
+.delete-btn {
+    cursor: pointer;
+    color: rgb(36, 122, 243);
+    font-weight: bold;
+    margin-left: 10px;
+}
+#message {
+    width: 50%; /* 현재 너비의 70%로 설정 */
+    height: 40px;
+    vertical-align: middle;
+}
+
 .footerul ul{
     list-style: none;
     display: flex;
@@ -138,7 +142,6 @@ main {
     align-items: center; /* 수직 가운데 정렬 */
     justify-content: center; /* 수평 가운데 정렬 */
     text-align: center; /* 텍스트를 가운데 정렬 */
-    background-color: white;
 }
 
 .card img {
@@ -160,14 +163,7 @@ main {
     flex-direction: column;
     justify-content: left;
 }
-.footer image {
-    margin-left: 300px;
 
-}
-.footer image2 {
-    margin-left: 250px;
-
-}
 .footer {
     display:flex;
     justify-content: center;
