@@ -44,6 +44,20 @@ nav a:hover {
     background-color: #ddd;
 }
 
+.navyBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 150px;
+}
+
 main {
     padding: 20px;
 }
@@ -56,6 +70,7 @@ main {
 .intro h1 {
     font-size: 40px;
     color: hsl(0, 67%, 58%);
+    margin-top: 150px;
 }
 
 .intro p {
@@ -85,22 +100,37 @@ main {
     text-align: center;
 }
 
+.commu-news-container {
+    display: flex;
+    justify-content: center;
+}
+
 .chat-container {
-    width: 70%;
+    width: 600px;
     margin: 0 auto;
     border: 1px solid #ccc;
     height: 400px; /* 채팅박스 높이 */
     overflow-y: scroll;
+    margin-top: 80px;
 }
 
 .message-box {
-    width: 55.55%;
+    width: 90%;
     display: inline-block;
 }
 
 .send-button {
     width: auto; /* 너비를 자동으로 조절하도록 수정 */
     display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .delete-btn {
@@ -125,8 +155,11 @@ main {
     margin: 0;
 }
 
+.news {
+    width: 35%;
+}
+
 .news-container {
-    border: 1px solid #ccc;
     padding: 15px;
     margin: 20px;
 }
