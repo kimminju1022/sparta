@@ -135,3 +135,6 @@ main {
     box-sizing: border-box;
     margin-bottom: 20px; 
 }
+.card-img-top {
+    border-radius: 8%;
+}
