@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 40px;
+    color: hsl(0, 67%, 58%);
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.news {
+    margin-bottom: 40px;
+}
+
+.news h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.news-feed {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-container {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    height: 400px; /* 채팅박스 높이 */
+    overflow-y: scroll;
+}
+
+.message-box {
+    width: 55.55%;
+    display: inline-block;
+}
+
+.send-button {
+    width: auto; /* 너비를 자동으로 조절하도록 수정 */
+    display: inline-block;
+}
+
+.delete-btn {
+    cursor: pointer;
+    color: rgb(36, 122, 243);
+    font-weight: bold;
+    margin-left: 10px;
+}
+#message {
+    width: 50%; /* 현재 너비의 70%로 설정 */
+    height: 40px;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.footerul ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.news-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+}
+
+.news-line {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.reporter {
+    font-style: italic;
+    color: #adadad;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px; /* 카드 간격을 8px로 조정 */
+    padding: 0 20px;
+}
+
+.card {
+    flex: 0 1 calc(33.33% - 8px); /* 카드를 동일한 너비로 설정, 간격 고려하여 계산 */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px; /* 카드 내부 여백 */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* 이미지와 텍스트를 가로로 나열 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    background-color: white;
+}
+
+.card img {
+    max-width: 100%; /* 이미지의 최대 너비를 100%로 설정하여 컨테이너에 맞춤 */
+    max-height: 100%; /* 이미지의 최대 높이를 100%로 설정하여 컨테이너에 맞춤 */
+    width: auto; /* 이미지의 너비를 자동으로 조정하여 비율 유지 */
+    height: 100px; /* 이미지의 높이를 자동으로 조정하여 비율 유지 */
+    object-fit: contain; /* 이미지가 컨테이너 내에서 조정되는 방법을 지정 (비율 유지) */
+    margin-right: 30px; /* 이미지와 텍스트 사이의 간격 */
+    margin-bottom: 0; /* 이미지 아래 여백 제거 */
+}
+
+.card-text {
+    flex: 1; /* 텍스트가 가능한 만큼 확장되도록 설정 */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
