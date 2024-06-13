@@ -76,6 +76,7 @@
                                         messageInput.value = "";
 
                                         saveMessages(); // 메시지 추가 후 저장
+                                        addDeleteEventListeners();
                                     }
                                 }
 
@@ -84,6 +85,17 @@
                                     var chatBoxContent = document.getElementById("chat-box").innerHTML;
                                     localStorage.setItem("savedMessages", chatBoxContent);
                                 }
+                                 function addDeleteEventListeners() {
+                                    var deleteButtons = document.getElementsByClassName("delete-btn");
+                                    for (var i = 0; i < deleteButtons.length; i++) {
+                                        deleteButtons[i].removeEventListener("click", deleteMessage); // 기존 이벤트 리스너 제거
+                                        deleteButtons[i].addEventListener("click", deleteMessage);
+                                        };
+                                        }
+                                        function deleteMessage(event) {
+                                            event.target.parentElement.remove();
+                                            saveMessages(); // 메시지 삭제 후 저장
+                                        }
                             </script>
 
                         </section>
