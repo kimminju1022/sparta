@@ -159,3 +159,6 @@ main {
     flex-direction: column;
     justify-content: left;
 }
+.footer image {
+    margin-left: 300px;
+}
