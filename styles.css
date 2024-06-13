@@ -121,24 +121,41 @@ main {
 }
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px; /* 카드 간격을 8px로 조정 */
+    padding: 0 20px;
 }
 
 .card {
-    width: 300px; 
-    height: 300px;
+    flex: 0 1 calc(33.33% - 8px); /* 카드를 동일한 너비로 설정, 간격 고려하여 계산 */
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px; /* 카드 내부 여백 */
     box-sizing: border-box;
-    margin-bottom: 20px; 
-    background-color: white;
+    display: flex;
+    flex-direction: row; /* 이미지와 텍스트를 가로로 나열 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
 }
-.card-img-top {
-    border-radius: 8%;
+
+.card img {
+    max-width: 100%; /* 이미지의 최대 너비를 100%로 설정하여 컨테이너에 맞춤 */
+    max-height: 100%; /* 이미지의 최대 높이를 100%로 설정하여 컨테이너에 맞춤 */
+    width: auto; /* 이미지의 너비를 자동으로 조정하여 비율 유지 */
+    height: 100px; /* 이미지의 높이를 자동으로 조정하여 비율 유지 */
+    object-fit: contain; /* 이미지가 컨테이너 내에서 조정되는 방법을 지정 (비율 유지) */
+    margin-right: 30px; /* 이미지와 텍스트 사이의 간격 */
+    margin-bottom: 0; /* 이미지 아래 여백 제거 */
 }
-.footer image {
-    margin-left: 300px;
+
+.card-text {
+    flex: 1; /* 텍스트가 가능한 만큼 확장되도록 설정 */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
