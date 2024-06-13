@@ -138,6 +138,7 @@ main {
     align-items: center; /* 수직 가운데 정렬 */
     justify-content: center; /* 수평 가운데 정렬 */
     text-align: center; /* 텍스트를 가운데 정렬 */
+    background-color: white;
 }
 
 .card img {
